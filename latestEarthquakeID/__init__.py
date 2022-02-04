@@ -1,5 +1,7 @@
- import requests
+import requests
 from bs4 import BeautifulSoup
+
+import latestEarthquakeID
 
 
 def ekstraksi_data():
@@ -79,3 +81,9 @@ def tampilkan_data(result):
     print(f"Lokasi      : {result['Lokasi']['LS']}, {result['Lokasi']['BT']}")
     print(f"Pusat       : {result['Pusat']}")
     print(f"Dirasakan   : {result['Dirasakan']}")
+
+
+if __name__ == '__main__':
+    # print('Aplikasi Utama')
+    result = latestEarthquakeID.ekstraksi_data()
+    latestEarthquakeID.tampilkan_data(result)

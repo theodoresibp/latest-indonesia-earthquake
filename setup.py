@@ -13,16 +13,18 @@ setuptools.setup(
                 "and Geophysical Agency",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/theodoresibp/latest-indonesia-earthquake",
     project_urls={
-        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+        "",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Development Status :: 5 - Production/Stable",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    # package_dir={"": "src"},
+    # packages=setuptools.find_packages(where="src"),
+    packages=setuptools.find_packages(),
     python_requires=">=3.6",
 )
