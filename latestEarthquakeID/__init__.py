@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 
 import latestEarthquakeID
 
+description = 'To get latest indonesian earthquake information from BMKG.go.id'
+
 
 def ekstraksi_data():
     """
